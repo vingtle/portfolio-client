@@ -1,0 +1,115 @@
+/* === Work Section Styling === */
+.work-container {
+    background: black; /* Background black */
+    color: white; /* Text white */
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ovo', serif;
+}
+
+/* === Work Title === */
+.work-title {
+    font-size: 2.5rem;
+    font-family: 'Ovo', serif;
+    margin-bottom: 2rem;
+    margin-bottom: 80px;
+}
+
+/* === Work Grid === */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns Default */
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    
+}
+
+/* === Work Section Box === */
+.work-section {
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    font-family: 'Ovo', serif;
+}
+
+/* Hover Effect */
+.work-section:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* === Category Titles === */
+.work-category {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: semi-bold;
+    font-family: 'Ovo', serif;
+}
+
+/* === Work List === */
+.work-list {
+    list-style: none;
+    padding: 0;
+    font-family: 'Ovo', serif;
+}
+
+.work-item {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10px;
+    color: lightgray;
+    margin-bottom: 5px;
+    font-family: 'Ovo', serif;
+}
+
+
+
+/* Light Theme Support */
+body.light-theme .work-container {
+    background: white;
+    color: black;
+}
+
+/* Fix Work Cards */
+body.light-theme .work-category {
+    color: black;
+}
+
+/* Fix Work Section Icons */
+body.light-theme .work-list {
+    filter: invert(1);
+}
+
+/* === Responsive Design === */
+@media (max-width: 1060px) {
+    .work-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 Column for Medium Screens */
+    }
+
+    .work-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .work-title {
+        font-size: 1.8rem;
+    }
+
+    .work-section {
+        padding: 1rem;
+    }
+
+    .work-category {
+        font-size: 1.1rem;
+    }
+
+    .work-item {
+        font-size: 0.9rem;
+    }
+}

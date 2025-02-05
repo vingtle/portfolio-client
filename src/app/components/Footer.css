@@ -1,0 +1,136 @@
+/* === Footer Container === */
+.footer {
+    background: black; /* Black background */
+    color: white; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+/* === Footer Top Section === */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+/* Footer Logo */
+.footer-logo-img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Footer Contact */
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-mail-icon {
+    width: 20px;
+    filter: brightness(0.5) invert(1); /* Make sure the icon is visible on dark background */
+}
+
+.footer-email {
+    font-size: 1rem;
+    color: white;
+}
+
+/* === Divider Line === */
+.footer-divider {
+    width: 100%;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+}
+/* Fix Footer Divider */
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: gray;
+    margin: 20px 0;
+}
+
+/* === Footer Bottom Section === */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    padding-top: 1rem;
+}
+
+/* Footer Links */
+.footer-bottom-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-bottom-right a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-bottom-right a:hover {
+    color: #ff6600;
+}
+
+body.light-theme .footer hr {
+    background: black;
+}
+
+
+/* Light Mode Footer Bottom Right Text */
+body.light-theme .footer-bottom-right a {
+    color: black;
+}
+
+body.light-theme .footer-bottom-right a:hover {
+    color: #ff6600;
+}
+
+body.light-theme .footer-email {
+    color: black;
+}
+
+
+/* Light Theme Email Icon */
+body.light-theme .footer-email img {
+    filter: brightness(0) invert(0);
+}
+/* === Responsive Design === */
+@media (max-width: 1060px) {
+    .footer {
+        padding: 2rem 8%;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 2rem 5%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .footer-bottom-right {
+        gap: 15px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,157 @@
+/* === Services Section === */
+.services-container {
+    background: black; /* Same as Navbar & About */
+    color: white; /* White text */
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === Section Titles === */
+.services-intro {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Ovo', serif;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-family: 'Ovo', serif;
+    margin-bottom: 2rem;
+}
+
+/* === Description Text === */
+.services-description {
+    font-size: 1rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    font-family: 'Ovo', serif;
+}
+
+/* === Grid Layout for Resource Cards === */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns Default */
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* === Individual Service Card === */
+.service-card {
+   
+    border: 1px solid gray;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* === Icons === */
+.service-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* === Titles & Text === */
+.service-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.service-text {
+    font-size: 0.9rem;
+    color: rgb(211, 211, 211);
+}
+
+/* === Read More Button === */
+.service-readmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.service-readmore:hover {
+    color: #ff6600;
+}
+
+.readmore-icon {
+    width: 16px;
+}
+.services-container {
+    background: black; /* Default to Dark Mode */
+    color: white;
+    font-family: 'Ovo', serif;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+/* Light Theme Support */
+body.light-theme .services-container {
+    background: white;
+    color: black;
+}
+
+body.light-theme .service-text {
+    color: black;
+}
+
+body.light-theme .service-title {
+    color: black;
+}
+
+body.light-theme .service-readmore{
+    color: black;
+}
+
+body.light-theme .service-readmore:hover {
+    color: rgb(200, 4, 4);
+}
+/* Fix Icons */
+body.light-theme .service-icon {
+    filter: invert(1);
+}
+
+
+/* === Responsive Design === */
+@media (max-width: 1060px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    }
+
+    .service-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* Single Column */
+    }
+
+    .service-title {
+        font-size: 1rem;
+    }
+
+    .service-text {
+        font-size: 0.8rem;
+    }
+}

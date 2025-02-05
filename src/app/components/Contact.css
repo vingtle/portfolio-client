@@ -1,0 +1,147 @@
+/* === Contact Section === */
+.contact {
+    background: black; /* Black background */
+    color: white;
+    font-family: 'Ovo', serif;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === Contact Title === */
+.contact-title h3 {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+.contact-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-title p {
+    font-size: 1rem;
+    max-width: 600px;
+    color: lightgray;
+    margin-bottom: 2rem;
+}
+
+/* === Contact Form === */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Two Inputs in One Row */
+.contact-inputs {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact-inputs input {
+    flex: 1;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Ovo', serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: lightgray;
+}
+
+/* Submit Button */
+.contact-submit {
+    padding: 0.8rem 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+
+.contact-submit:hover {
+    background-color: #ddd;
+}
+
+/* Light Theme Support */
+body.light-theme .contact {
+    background: white;
+    color: black;
+}
+body.light-theme .contact-title p {
+    color: black;
+}
+/* Fix Input Fields */
+body.light-theme .contact-form inputs,
+body.light-theme .contact-form textarea {
+    background-color: #fff;
+    color: black;
+}
+
+/* Fix Submit Button */
+body.light-theme .contact-submit {
+    background: black;
+    color: white;
+}
+
+body.light-theme .contact-submit:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* === Responsive Design === */
+@media (max-width: 1060px) {
+    .contact-title h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        max-width: 500px;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-title p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-submit {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+}

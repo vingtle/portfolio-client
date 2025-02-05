@@ -1,0 +1,284 @@
+/* === Section Titles === */
+.about-intro {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Ovo', serif;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-family: 'Ovo', serif;
+    margin-bottom: 2rem;
+}
+
+/* === Content Layout === */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+    font-family: 'Ovo', serif;
+}
+
+/* === Profile Image === */
+.about-image .user-img {
+    width: 300px;
+    height: 550px;
+    border-radius: 50;
+    object-fit: cover;
+}
+
+/* === About Description === */
+.about-description {
+    font-size: 1rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    font-family: 'Ovo', serif;
+    text-align: center;
+}
+
+/* === Info List === */
+.about-info-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+/* === Info Item === */
+.info-item {
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.178);
+}
+
+/* === Icons in Info List === */
+.info-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-description {
+    font-size: 0.9rem;
+    color: lightgray;
+    font-family: 'Ovo', serif;
+}
+
+/* === Soft Skills Section === */
+.about-softskills {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Ovo', serif;
+}
+
+/* === Tools List === */
+.about-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+/* === Individual Tool Icons === */
+.tool-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+}
+.about-readmore{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.about-readmore img{
+    width: 10px;
+}
+
+.about-readmore:hover {
+    color: #ff6600;
+}
+/* === Popup Modal Styling === */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 39, 40, 0.7); /* Darker background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+/* Popup Content */
+.popup-content {
+    background: #1d2123;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Popup Title */
+.popup-content h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Popup Description */
+.popup-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #ccc;
+}
+
+/* Close Button */
+.close-btn {
+    margin-top: 20px;
+    padding: 6px 12px;
+    background: rgb(85, 83, 83);
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    background: #323233;
+}
+
+/* Prevent Background Scroll when Popup is Open */
+body.popup-open {
+    overflow: hidden;
+}
+
+.tool-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.tool-icon {
+    width: 30px;
+}
+.about-container {
+    background: black; /* Default to Dark Mode */
+    color: white;
+    font-family: 'Ovo', serif;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+/* Light Theme Support */
+body.light-theme .about-container {
+    background: white;
+    color: black;
+}
+.about-container {
+    background: black;
+    color: white;
+}
+
+/* Light Theme Support */
+body.light-theme .about-container {
+    background: white;
+    color: black;
+}
+
+/* Fix InfoList Text */
+body.light-theme .info-item {
+    color: black;
+}
+
+/* Fix Icons */
+body.light-theme .info-icon {
+    filter: invert(1); /* Ensures icons are visible in light mode */
+   
+}
+body.light-theme .info-description{
+    color: black;
+}
+
+/* === Responsive Design (Same as Navbar) === */
+@media (min-width: 1061px) {
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .about-text {
+        flex: 2;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1060px) {
+    .about-title {
+        font-size: 2rem;
+    }
+    .about-info-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-tools {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+    .about-info-list {
+        grid-template-columns: repeat(1, 1fr); /* Single Column */
+    }
+    .about-description {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,162 @@
+/* === Header Container === */
+.header-container {
+    background: black; /* Black background like navbar */
+    color: white; /* White text */
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === Profile Image === */
+.header-profile .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 6rem;
+}
+
+/* === Header Title (Dr. Parthasarathy) === */
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Ovo', serif;
+}
+
+/* Hand Icon */
+.hand-icon {
+    width: 30px;
+}
+
+/* === Header Description === */
+.header-description {
+    font-size: 2rem;
+    font-family: 'Ovo', serif;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+}
+
+/* === Header Text === */
+.header-text {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    font-family: 'Ovo', serif;
+}
+
+/* === Buttons Container === */
+.header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+/* === Button Styles === */
+.header-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-family: 'Ovo', serif;
+}
+
+/* === Primary Button (Contact Me) === */
+.primary-button {
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.primary-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* === Secondary Button (Resume) === */
+.secondary-button {
+    background: black;
+    color: white;
+    border: 2px solid gray;
+}
+
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button Icons */
+.button-icon {
+    width: 16px;
+}
+.header-container {
+    background: black; /* Default dark mode */
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+/* Light Theme Support */
+body.light-theme .header-container {
+    background: white;
+    color: black;
+}
+
+/* Fix Button Colors */
+body.light-theme .primary-button {
+    background: black;
+    color: white;
+    border: 2px solid black;
+}
+
+body.light-theme .primary-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+body.light-theme .secondary-button {
+    background: white;
+    color: black;
+    border: 2px solid gray;
+}
+
+body.light-theme .secondary-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsive Design (Same as Navbar) === */
+@media (min-width: 1061px) {
+    .header-buttons {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1060px) {
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .header-description {
+        font-size: 1.5rem;
+    }
+
+    .header-text {
+        font-size: 0.9rem;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-description {
+        font-size: 1.2rem;
+    }
+}
