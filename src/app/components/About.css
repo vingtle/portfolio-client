@@ -204,6 +204,11 @@ body.popup-open {
     font-family: 'Ovo', serif;
     text-align: center;
     padding: 5rem 2rem;
+    display: flex;          /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    width: 100%;
 }
 
 /* Light Theme Support */
@@ -211,10 +216,7 @@ body.light-theme .about-container {
     background: white;
     color: black;
 }
-.about-container {
-    background: black;
-    color: white;
-}
+
 
 /* Light Theme Support */
 body.light-theme .about-container {
@@ -252,6 +254,7 @@ body.light-theme .info-description{
         flex: 2;
         text-align: left;
     }
+    
 }
 
 @media (max-width: 1060px) {
