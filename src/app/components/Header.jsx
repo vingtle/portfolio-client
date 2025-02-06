@@ -18,7 +18,7 @@ const Header = () => {
 
       {/* Description */}
       <h1 className="header-description">
-      Marketing expert, program manager, and educator with extensive experience in higher 
+      Marketing expert, Programme Manager and Educator with extensive experience in higher 
       education administration, specialized in neuromarketing, branding, business development, 
       and consumer behaviour. 
 
@@ -38,7 +38,7 @@ const Header = () => {
           <Image src={assets.right_arrow_white} alt="Arrow Icon" className="button-icon" />
         </a>
 
-        <a href="/Dr.Aparajit_Parthasarathy_CV.pdf" download className="header-button secondary-button">
+        <a href="/DrParthasarthy-resume.pdf" download className="header-button secondary-button">
           My Resume
           <Image src={assets.download_icon} alt="Download Icon" className="button-icon" />
         </a>

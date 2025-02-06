@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <a href="#top" className="navbar-logo">
-                <Image src={assets.logodr} alt="Logo" />
+                <Image src={assets.final_logo} alt="Logo" />
             </a>
 
             <ul className='navbar-links'>
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <li><a href="#about">About me</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#work">My Work</a></li>
-                <li><a href="#contact">Connect with me</a></li>
+                <li><a href="https://www.linkedin.com/in/aparajitsarathy/">Connect with me</a></li>
             </ul>
 
             {/* Theme Toggle Button */}

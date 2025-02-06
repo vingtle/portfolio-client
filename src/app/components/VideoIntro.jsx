@@ -6,7 +6,7 @@ const VideoIntro = ({ onVideoEnd }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onVideoEnd();
-    }, 3000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, [onVideoEnd]);
   

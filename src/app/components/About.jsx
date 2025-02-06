@@ -8,12 +8,24 @@ const infoList = [
   {
     icon: <FaBook size={30} color="white" />,
     title: "Publications",
-    description: "How brands use emotional fragility using neuromarketing techniques to make parents an unwitting messenger of brands to their children. This exploratory research examines how brands leverage emotional neuromarketing and persuasive strategies to influence parents as unwitting messengers, shaping children's brand preferences and purchasing behavior. By analyzing marketing techniques that appeal to parental emotions—such as trust, care, and responsibility—this study highlights the subconscious role parents play in brand communication. The findings provide insights into ethical considerations, consumer behavior, and the psychological mechanisms brands employ to establish early brand loyalty in children through parental influence.",
+    description: `An Exploratory Research on Brands Using Emotional Neuromarketing and Persuasion to Make Parents an Unwitting Messenger of Brands to Their Children.
+    
+    While brands using emotional neuromarketing, the research is aimed to understand if people still have free choice in choosing what they consume or not and is it ethical to make parents unwitting messengers of brands and introduce products to their child(ren). 
+    
+    This technique helps in connecting with the brand emotionally without investing a lot of money, attracting two generations of audience at the same time through information processing and determining the essence and emotional values using four pillars of emotional branding and persuasion tactics.
+    
+    The study focuses on four brands – Omega, Hermès, Nespresso, and Nature et Découvertes on case study analysis to dissect their emotional neuromarketing approaches embedded in the business. 
+    
+    The results show how a young uncluttered mind is manipulated emotionally and brought into the brand’s world without any intended act. In a free market, consumers and most importantly children should be able to choose from their conscious processing. However, it begs the question of whether they actually do have any opportunity or choice to think.
+    
+    It also sheds light on how people are made to think it was their mindful decision-making, but in fact, it is not in reality. In the future, how children start thinking that the products bought from brands remind and connect with their parents emotionally is questionable.
+
+    Keywords: Neuromarketing; emotions; storytelling; unconsciousness; unwitting; ethics.`
   },
   {
     icon: <FaGraduationCap size={30} color="white" />,
     title: "Education",
-    description: "International School of Management, Paris - Doctorate in Neuromarketing, INSEEC Business School, Paris - MBA in Marketing and Communication, University of Manchester, Manchester Masters in Nanotechnology.",
+    description: "Doctorate in Neuromarketing - International School of Management, Paris. MBA in Marketing and Communication - INSEEC Business School, Paris. Masters in Nanotechnology - University of Manchester",
   },
   {
     icon: <FaFolderOpen size={30} color="white" />,
@@ -51,9 +63,9 @@ const About = () => {
           <p className="about-description">
           Dr. Parthasarathy, a former shareholder and Head of International Marketing & Distribution 
           at F&F Beverages, played a key role in global expansion, brand strategy, and digital marketing. 
-          His entrepreneurial drive led to the launch of the award-winning organic brand Innate. 
-          With expertise in marketing, SEO, and business development, he consults on brand 
-          growth and content strategy. Additionally, he is a visiting professor at top 
+          His entrepreneurial drive led to the launch of the award-winning organic brand, Innate. 
+          With expertise in marketing, branding and business development, he consults on brand 
+          growth and emotional content strategy. Additionally, he is a visiting professor at top 
           French business schools, bridging academia and industry.
 
           </p>
@@ -92,10 +104,17 @@ const About = () => {
                   {selectedAbout.title === "Publications"
                   ? selectedAbout.description.split('. ').map((sentence, index) => (
                     <span key={index}>
-                      {index < 2 ? `'${sentence}'` : sentence + "."}
+                      {index < 2 ? `"${sentence}"` : sentence + "."}
                     </span>
                       ))
-                    : selectedAbout.description}
+                    : selectedAbout.title === "Education"
+                    ? selectedAbout.description.split('. ').map((school, index) => (
+                      <span key={index}>
+                        {school}.
+                        <br />
+                      </span>
+                    ))
+                  : selectedAbout.description}
                 </p>
                 <button className='close-btn' onClick={closePopup}>Close</button>
               </div>

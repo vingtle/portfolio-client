@@ -12,12 +12,11 @@ const Services = () => {
 
       {/* Description */}
       <p className="services-description">
-        Beyond academia, Dr. Sarathy has a strong background in marketing and 
-        business development. As a visiting professor, he has taught at 
-        prestigious business schools across France, including Rennes School of Business,
+        As a visiting professor, he has taught at prestigious business schools 
+        across France, including Rennes School of Business,
         EM Normandie, Audencia, ISCOM, and the American Business School of Paris, 
         delivering courses in Retail Analytics, International Business Law, 
-        Neuromarketing, and Consumer Behavior.
+        Neuromarketing, Branding, and Consumer Behavior.
       </p>
 
       {/* Resource Cards */}

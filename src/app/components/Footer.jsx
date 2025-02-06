@@ -10,7 +10,7 @@ const Footer = () => {
       {/* Top Section */}
       <div className="footer-top">
         <a href="#top" className="footer-logo">
-          <Image src={assets.logodr} alt="Logo" className="footer-logo-img" />
+          <Image src={assets.final_logo} alt="Logo" className="footer-logo-img" />
         </a>
         <div className="footer-contact">
           <Image src={mail_icon} alt="Mail Icon" className="footer-mail-icon" />

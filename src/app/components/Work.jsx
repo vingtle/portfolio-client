@@ -4,7 +4,7 @@ import './Work.css';
 
 const workData = [
   {
-    category: "Supervisions",
+    category: "Thesis Supervisions",
     items: [
       "Bachelors level [ Completed: 10 studens & In progress: 3 students.]",
       "Masters'level [ Completed: 16 students & In progress: 2 students.]",
@@ -14,8 +14,16 @@ const workData = [
   {
     category: "Experience",
     items: [
-      "10+ years in international business and marketing",
+      "15+ years in international business and marketing",
       "Led product launches in the European and American markets",
+    ],
+  },
+  {
+    category: "Skills",
+    items: [
+      "Relationship Building, Public Speaking, Customer Relationship, Customer Experience, Interpersonal Skills",
+      "Brand Strategy, Business Strategy, Program Management, Business Process, Market Research.",
+      "Creativity, Design, Brand Design, Openness, Lifelong Learning.",
     ],
   },
   {
@@ -25,13 +33,6 @@ const workData = [
       "Best Packaging Design: German Design Awards, Innate, F&B Beverages 2019",
     ],
   },
-  {
-    category: "Skills",
-    items: [
-      "Strategic Marketing, Business Development, Brand Mamagement, BtoB and BtoC Marketing, Intellectual Property",
-      "Public Speaking, Leadership, Brand Strategy, Creative",
-    ],
-  }
 ];
 
 const Work = () => {
