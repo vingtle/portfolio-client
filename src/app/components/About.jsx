@@ -8,7 +8,7 @@ const infoList = [
   {
     icon: <FaBook size={30} color="white" />,
     title: "Publications",
-    description: "How brands use emotional fragility using neuromarketing techniques to make parents an unwitting messenger of brands to their children.",
+    description: "How brands use emotional fragility using neuromarketing techniques to make parents an unwitting messenger of brands to their children. This exploratory research examines how brands leverage emotional neuromarketing and persuasive strategies to influence parents as unwitting messengers, shaping children's brand preferences and purchasing behavior. By analyzing marketing techniques that appeal to parental emotions—such as trust, care, and responsibility—this study highlights the subconscious role parents play in brand communication. The findings provide insights into ethical considerations, consumer behavior, and the psychological mechanisms brands employ to establish early brand loyalty in children through parental influence.",
   },
   {
     icon: <FaGraduationCap size={30} color="white" />,
@@ -88,7 +88,15 @@ const About = () => {
             <div className='popup-overlay' onClick={closePopup}>
               <div className='popup-content' onClick={(e) => e.stopPropagation()}>
                 <h2>{selectedAbout.title}</h2>
-                <p>{selectedAbout.description}</p>
+                <p>
+                  {selectedAbout.title === "Publications"
+                  ? selectedAbout.description.split('. ').map((sentence, index) => (
+                    <span key={index}>
+                      {index < 2 ? `'${sentence}'` : sentence + "."}
+                    </span>
+                      ))
+                    : selectedAbout.description}
+                </p>
                 <button className='close-btn' onClick={closePopup}>Close</button>
               </div>
             </div>
