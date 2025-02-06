@@ -38,7 +38,7 @@ const Header = () => {
           <Image src={assets.right_arrow_white} alt="Arrow Icon" className="button-icon" />
         </a>
 
-        <a href="/DrParthasarthy-resume.pdf" download className="header-button secondary-button">
+        <a href="/Dr_Parthasarthy_resume.pdf" download className="header-button secondary-button">
           My Resume
           <Image src={assets.download_icon} alt="Download Icon" className="button-icon" />
         </a>
