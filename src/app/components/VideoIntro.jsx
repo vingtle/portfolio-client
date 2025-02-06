@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./VideoIntro.css";
 
 const VideoIntro = ({ onVideoEnd }) => {
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onVideoEnd();
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [onVideoEnd]);
+  
   return (
     <div className="video-container">
       <video

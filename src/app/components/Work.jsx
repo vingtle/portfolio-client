@@ -4,10 +4,11 @@ import './Work.css';
 
 const workData = [
   {
-    category: "Projects",
+    category: "Supervisions",
     items: [
-      "Developed an AI-based chatbot for customer service automation",
-      "Created a multi-platform digital marketing strategy",
+      "Bachelors level [ Completed: 10 studens & In progress: 3 students.]",
+      "Masters'level [ Completed: 16 students & In progress: 2 students.]",
+      "Doctoral level [ In progress: 5 students.]",
     ],
   },
   {
@@ -20,8 +21,8 @@ const workData = [
   {
     category: "Achievements",
     items: [
-      "Recognized as Top 100 Global Marketing Leaders",
-      "Published research in international business journals",
+      "Most Unique Product: Innate, F&B Beverages 2017",
+      "Best Packaging Design: German Design Awards, Innate, F&B Beverages 2019",
     ],
   },
   {

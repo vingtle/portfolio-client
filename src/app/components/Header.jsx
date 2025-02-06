@@ -8,27 +8,27 @@ const Header = () => {
     <div className="header-container">
       {/* Profile Image */}
       <div className="header-profile">
-        <Image src={assets.profile} alt="Profile" className="profile-img" />
+        <Image src={assets.header_img} alt="Profile" className="profile-img" />
       </div>
 
       {/* Title with Hand Icon */}
       <h3 className="header-title">
         Dr Parthasarathy
-        <Image src={assets.hand_icon} alt="Hand Icon" className="hand-icon" />
       </h3>
 
       {/* Description */}
       <h1 className="header-description">
-        A seasoned program manager, educator, and marketing expert 
-        with extensive experience in higher education administration, 
-        strategic planning, and international business development.
+      Marketing expert, program manager, and educator with extensive experience in higher 
+      education administration, specialized in neuromarketing, branding, business development, 
+      and consumer behaviour. 
+
       </h1>
 
       {/* Additional Info */}
       <p className="header-text">
-        Currently serving as Program Manager for ESG Luxe and ESG Sport at 
-        Galileo Global Education, he oversees academic program delivery, 
-        faculty recruitment, student engagement, and curriculum development.
+      Currently, international master’s Programme Manager at ESG Luxe 
+      and DBA Programme Manager at ESGCI, overseeing academic programs, faculty, 
+      student engagement and thesis supervisor for master’s and doctoral students.
       </p>
 
       {/* Buttons */}

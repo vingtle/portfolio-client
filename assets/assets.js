@@ -51,6 +51,8 @@ import icon_publication_dark from './icon_publication_dark.png';
 import icon_b2b from './icon_b2b.png';
 import icon_speaking from './icon_pubspkeaking.png';
 import iconresources from './icon-resources.png';
+import header_img from './header-Aps.jpg';
+import about_img from './about-Aps.jpg';
 
 
 export const assets = {
@@ -107,6 +109,8 @@ export const assets = {
     icon_b2b,
     icon_speaking,
     iconresources,
+    header_img,
+    about_img,
 };
 
 export const workData = [
@@ -133,9 +137,9 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.iconresources, title: 'Publications 2024', description: 'An Exploratory Research on Brands Using Emotional Neuromarketing and...', link: '' },
-    { icon: assets.iconresources, title: 'Publications 2023', description: 'How brands use emotional fragility using neuromarketing ...', link: '' },
-    { icon: assets.iconresources, title: 'Publications 2009', description: 'An Innovative Braille System Keyboard for the Visually Impaired....', link: '' },
+    { icon: assets.iconresources, title: 'Publications 2024', description: 'An Exploratory Research on Brands Using Emotional Neuromarketing and Persuasion to Make Parents an Unwitting Messenger of Brands to Their Children.', link: '' },
+    { icon: assets.iconresources, title: 'Publications 2023', description: ' How brands use emotional fragility using neuromarketing techniques to make parents an unwitting messenger of brands to their children. Question(s) de Management.', link: '' },
+    { icon: assets.iconresources, title: 'Publications 2009', description: ' An Innovative Braille System Keyboard for the Visually Impaired. 11th International Conference on Computer Modelling and Simulation. [DOI: 10.1109/UKSIM.2009.66]', link: '' },
 ]
 
 export const infoList = [

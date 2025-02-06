@@ -43,17 +43,19 @@ const About = () => {
       <div className="about-content">
         {/* Profile Image */}
         <div className="about-image">
-          <Image src={assets.user} alt="user" className="user-img" />
+          <Image src={assets.about_img} alt="user" className="user-img" />
         </div>
 
         {/* Text & Information */}
         <div className="about-text">
           <p className="about-description">
-            Dr. Parthasarathy is a marketing professional with 15 years of experience
-            in International Marketing/Business and Sales (UK, France, USA, and India).
-            He has successfully launched products and services, built distribution
-            partnerships, acquired clients (B2B & B2C), and led social media campaigns.
-            He possesses a great ability to lead and implement global strategies.
+          Dr. Parthasarathy, a former shareholder and Head of International Marketing & Distribution 
+          at F&F Beverages, played a key role in global expansion, brand strategy, and digital marketing. 
+          His entrepreneurial drive led to the launch of the award-winning organic brand Innate. 
+          With expertise in marketing, SEO, and business development, he consults on brand 
+          growth and content strategy. Additionally, he is a visiting professor at top 
+          French business schools, bridging academia and industry.
+
           </p>
 
           {/* Info List */}

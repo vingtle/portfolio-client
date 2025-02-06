@@ -25,8 +25,8 @@
 
 /* === Profile Image === */
 .about-image .user-img {
-    width: 300px;
-    height: 550px;
+    width: 350px;
+    height: 620px;
     border-radius: 50;
     object-fit: cover;
 }
@@ -88,7 +88,7 @@
 /* === Soft Skills Section === */
 .about-softskills {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-family: 'Ovo', serif;
 }
 
@@ -98,7 +98,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 /* === Individual Tool Icons === */

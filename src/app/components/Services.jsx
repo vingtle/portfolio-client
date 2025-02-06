@@ -22,14 +22,14 @@ const Services = () => {
 
       {/* Resource Cards */}
       <div className="services-grid">
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {serviceData.map(({ icon, title, description }, index) => (
           <div key={index} className="service-card">
             <Image src={icon} alt={title} className="service-icon" />
             <h3 className="service-title">{title}</h3>
             <p className="service-text">{description}</p>
-            <a href={link} className="service-readmore">
+            {/* <a  className="service-readmore">
               Read more <Image src={assets.right_arrow} alt="Arrow" className="readmore-icon" />
-            </a>
+            </a> */}
           </div>
         ))}
       </div>
